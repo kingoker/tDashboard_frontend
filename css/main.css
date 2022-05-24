@@ -49,7 +49,11 @@ a{
 }
 .table-2{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.table-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .whiteSquare{
     background-color: #fff;
@@ -263,6 +267,9 @@ a{
 }
 .table__text{
     padding: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
 }
 .company__order{
     width: 30px;
@@ -303,11 +310,6 @@ a{
 .company__name a:hover{
     text-decoration: underline;
     color: #128CDB;
-}
-.company__score{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
 }
 .country__img{
     border: 0.3px solid #000000;
