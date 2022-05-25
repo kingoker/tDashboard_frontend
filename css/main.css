@@ -82,28 +82,31 @@ a{
     line-height: 23px;
     transition: all 0.3s ease;
     text-align: center;
+    border: none;
+    outline: none;
 }
 .button:hover{
     background-color: #128CDB;
 }
 .input{
+    box-sizing: border-box;
     width: 100%;
     background: #FFFFFF;
     border-radius: 8px;
-    height: 20px;
-    padding: 10px;
+    min-height: 20px;
+    padding: 20px;
     border: none;
     outline:none;
+    font-size: 20px;
 }
 .input:hover, .input:active, .input:focus{
     box-shadow: inset 0px 2px 4px #A5A5A5;
     border: none;
     font-weight: 400;
-    font-size: 18px;
     line-height: 22px;
 }
 .input::placeholder{
-    color: #8A8A8E;
+    color: #bababa;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -165,7 +168,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .main__header{
     font-weight: 500;
@@ -179,6 +182,7 @@ a{
 .search{
     width: 343px;
     padding-left: 40px;
+    height: 20px;
 }
 .search__icon{
     position: absolute;
@@ -259,6 +263,12 @@ a{
     grid-template-columns: 3.1fr 1fr;
     gap: 30px;
 }
+.main__middle{
+    display: grid;
+    grid-template-columns: 3.1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
 .table__title p{
     font-weight: 500;
     font-size: 24px;
@@ -335,4 +345,30 @@ a{
 .country__title span{
     font-weight: 700;
 
+}
+
+/* Форма */
+.main__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form__inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+}
+.form__textarea{
+    height: 130px;
+    resize: none;
+}
+.form__label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
 }

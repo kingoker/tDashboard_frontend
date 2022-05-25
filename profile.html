@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Textile Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 </head>
 <body class="body df">
+
     <section class="sitebar">
         <div class="sitebar__container container">
             <div class="sitebar__top">
@@ -36,7 +37,7 @@
     <section class="main drSh">
         <div class="main__container container">
             <div class="main__top">
-                <h1 class="main__header">Продукт</h1>
+                <h1 class="main__header">Мой профиль</h1>
                 <div class="main__search">
                     <input type="text" class="search input" placeholder="Поиск">
                     <svg class="search__icon svg">
@@ -44,45 +45,48 @@
                     </svg>
                 </div>
             </div>
-            <div class="main__bottom">
-                <div class="main__best table p-20 whiteSquare">
-                    <h3 class="h3 pb-20">Лучшие производители</h3>
-                    <div class="table__title table-3">
-                        <p class="table__text tbr tbb">Название</p>
-                        <p class="table__text tbr tbb">Номер телефона</p>
-                        <p class="table__text tbb">Кол-во</p>
-                    </div>
-                    <div class="table__info table-3">
-                        <div class="company table__text tbr tbb">
-                            <div class="company__logo">
-                                <img src="img/logos/samo.png" alt="companyName" class="img">
-                            </div>
-                            <div class="company__name"><a href="#">Shawn</a></div>
+            <div class="main__middle">
+                <form action="#" method="post" class="main__form form">
+                    <div class="form__inputs">
+                        <div class="form__group">
+                            <label class="form__label">Ордер на</label>
+                            <select class="form__input input" target="_top">
+                                <option value="Покупка">Покупка</option>
+                                <option value="Продажа">Продажа</option>
+                            </select>
                         </div>
-                        <div class="company__score table__text tbb tbr">+998 93 122 15 71</div>
-                        <div class="company__score table__text tbb">678 тон</div>
-                    </div>
-                    <div class="table__info table-3">
-                        <div class="company table__text tbr tbb">
-                            <div class="company__logo">
-                                <img src="img/logos/samo.png" alt="companyName" class="img">
-                            </div>
-                            <div class="company__name"><a href="#">Shawn</a></div>
+                        <div class="form__group">
+                            <label class="form__label">Продукт</label>
+                            <select class="form__input input" target="_top">
+                                <option value="Пряжа">Пряжа</option>
+                                <option value="Полотно">Полотно</option>
+                                <option value="Ткань">Ткань</option>
+                            </select>
                         </div>
-                        <div class="company__score table__text tbb tbr">+998 93 122 15 71</div>
-                        <div class="company__score table__text tbb">678 тон</div>
-                    </div>
-                    <div class="table__info table-3">
-                        <div class="company table__text tbr tbb">
-                            <div class="company__logo">
-                                <img src="img/logos/samo.png" alt="companyName" class="img">
-                            </div>
-                            <div class="company__name"><a href="#">Shawn</a></div>
+                        <div class="form__group">
+                            <label class="form__label">Номер продукта</label>
+                            <select class="form__input input" target="_top">
+                                <option value="Пряжа">1</option>
+                                <option value="Полотно">2</option>
+                                <option value="Ткань">3</option>
+                            </select>
                         </div>
-                        <div class="company__score table__text tbb tbr">+998 93 122 15 71</div>
-                        <div class="company__score table__text tbb">678 тон</div>
+                        <div class="form__group">
+                            <label class="form__label">Марка продукта</label>
+                            <select class="form__input input" target="_top">
+                                <option value="CD">CD</option>
+                                <option value="OC">OC</option>
+                                <option value="KCD">KCD</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
+                    <div class="form__textaream">
+                        <label class="form__label">Примечания</label>
+                        <textarea cols="30" rows="10" class="form__textarea input" placeholder="Примечания"></textarea>
+                    </div>
+                    <button class="form__button button clrW">Отправить</button>
+                </form>
+
                 <div class="main__cotton whiteSquare p-20">
                     <h3 class="h3 pb-20">Стоимость хлопка</h3>
                     <div class="cotton__country">
@@ -127,6 +131,48 @@
                         </div>
                         <p class="country__title">Бразилия – <span>3.36 $</span></p>
                     </div>
+                </div>
+            </div>
+            <div class="main__bottom">
+                <div class="main__best table p-20 whiteSquare">
+                    <h3 class="h3 pb-20">Лучшие производители</h3>
+                    <div class="table__title table-2">
+                        <p class="table__text tbr tbb">Название</p>
+                        <p class="table__text tbb">Рейтинг</p>
+                    </div>
+                    <div class="table__info table-2">
+                        <div class="company table__text tbr tbb">
+                            <div class="company__order default">1</div>
+                            <div class="company__logo">
+                                <img src="img/logos/samo.png" alt="companyName" class="img">
+                            </div>
+                            <div class="company__name"><a href="#">Shawn</a></div>
+                        </div>
+                        <div class="company__score table__text tbb">5.0</div>
+                    </div>
+                    <div class="table__info table-2">
+                        <div class="company table__text tbr tbb">
+                            <div class="company__order default">1</div>
+                            <div class="company__logo">
+                                <img src="img/logos/samo.png" alt="companyName" class="img">
+                            </div>
+                            <div class="company__name"><a href="#">Shawn</a></div>
+                        </div>
+                        <div class="company__score table__text tbb">4.0</div>
+                    </div>
+                    <div class="table__info table-2">
+                        <div class="company table__text tbr tbb">
+                            <div class="company__order default">1</div>
+                            <div class="company__logo">
+                                <img src="img/logos/samo.png" alt="companyName" class="img">
+                            </div>
+                            <div class="company__name"><a href="#">Shawn</a></div>
+                        </div>
+                        <div class="company__score table__text tbb">2.4</div>
+                    </div>
+                </div>
+                <div class="main__profile">
+                    <a href="#" class="sitebar__button button df clrW">Изменить данные профиля</a>  
                 </div>
             </div>
         </div>
